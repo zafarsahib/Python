@@ -34,6 +34,7 @@ mysongs_playlist.add_song("Bohemian Rhapsody")
 mysongs_playlist.remove_song("Shape of You")
 
 mysongs_playlist.show_info()
+print("------------------------\n")
 
 # Homework Lab 1: Shopping Cart Class
 class ShoppingCart:
@@ -67,6 +68,7 @@ shopping_cart = ShoppingCart("Muhammad Zafar Kamran")
 shopping_cart.add_item(4)
 shopping_cart.remove_item(2)
 shopping_cart.show_cart()
+print("------------------------\n")
 
 # Homework Lab 1: Bank user Account Class
 class UserAccount:
@@ -95,7 +97,7 @@ class UserAccount:
         print(f"Active: {self.active}")
         print(f"Login Count: {self.login_count}")
 
-user_account = UserAccount("Zafar")
+user_account = UserAccount("Ali_Zafar")
 
 user_account.show_status()
 user_account.activate()
