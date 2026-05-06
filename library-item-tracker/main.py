@@ -19,6 +19,9 @@ print("\nTesting book2 methods")
 book2.display_info()
 book2.borrow()   # should say not available
 
+book3 = Book.from_string("Clean Code, Robert Martin, True")
+book3.display_info()
+
 # Class + Static methods testing 
 print("\nClass and Static Methods:")
 

@@ -1,10 +1,12 @@
 class Book:
+    count = 0
     library_name = "Central Library"
 
     def __init__(self, title, author, available=True):
         self.title = title
         self.author = author
         self.available = available
+        Book.count += 1
 
     def borrow(self):
         if self.available:
@@ -29,3 +31,11 @@ class Book:
     def is_valid_title(title):
         return len(title.strip()) > 0
     
+    @classmethod
+    def show_count(cls):
+        print(f"Total books: {cls.count}")
+
+    @classmethod
+    def from_string(cls, data):
+        title, author, available = data.split(",")
+        return cls(title, author, available == "True")
