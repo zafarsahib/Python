@@ -18,3 +18,15 @@ book1.display_info()
 print("\nTesting book2 methods")
 book2.display_info()
 book2.borrow()   # should say not available
+
+# Class + Static methods testing 
+print("\nClass and Static Methods:")
+
+print(Book.library_name)
+
+Book.change_library_name("City Library")
+print(Book.library_name)
+
+print(Book.is_valid_title("Python"))
+print(Book.is_valid_title(""))
+
