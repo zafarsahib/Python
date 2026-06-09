@@ -2,11 +2,12 @@ class Book:
     count = 0
     library_name = "Central Library"
 
-    def __init__(self, title, author, available=True):
-        self.title = title
-        self.author = author
-        self.available = available
-        Book.count += 1
+def __init__(self, title, author, available=True, genre="Unknown"):
+    self.title = title
+    self.author = author
+    self.available = available
+    self.genre = genre
+    Book.count += 1
 
     def borrow(self):
         if self.available:
