@@ -3,13 +3,16 @@ from core.enums import ShowStatus
 
 from models.customer import Customer
 from models.movie_show import MovieShow
+from models.staff import Staff
 
 
 def main():
     customer = Customer("Ava")
+    staff = Staff("Emma")
     show = MovieShow("Inception", 20, ShowStatus.OPEN)
 
     customer.display_info()
+    staff.display_info()
     show.display_info()
 
     print("Max tickets per booking:", MAX_TICKETS_PER_BOOKING)
@@ -17,3 +20,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
